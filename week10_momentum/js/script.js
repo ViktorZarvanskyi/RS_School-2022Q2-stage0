@@ -76,8 +76,8 @@ let count = 0;
 function setBg(funcFirst, funcSecond) {  
     const body = document.querySelector("body");
     const img = new Image();
-    img.src = `https://raw.githubusercontent.com/ViktorZarvanskyi/RS_School-2022Q2-stage0_momentum/main/assets/img/${funcFirst}/${funcSecond}.jpg`;
-    // img.src = `https://raw.githubusercontent.com/ViktorZarvanskyiRS_School-2022Q2-stage0/main/week10_RS_School-2022Q2-stage0_momentum/assets/img/${funcFirst}/${funcSecond}.jpg`;
+    // img.src = `https://raw.githubusercontent.com/ViktorZarvanskyi/RS_School-2022Q2-stage0_momentum/main/assets/img/${funcFirst}/${funcSecond}.jpg`;
+    img.src = `https://raw.githubusercontent.com/ViktorZarvanskyi/RS_School-2022Q2-stage0/main/week10_RS_School-2022Q2-stage0_momentum/assets/img/${funcFirst}/${funcSecond}.jpg`;
     img.onload = () => {
         body.style.backgroundImage = `url(${img.src})`;
     };
