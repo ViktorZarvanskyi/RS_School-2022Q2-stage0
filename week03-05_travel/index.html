@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./assets/svg/logo_travel_portal.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@400;700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel</title>
+</head>
+<body>
+  <header class="header">
+    <div class="modal-window-login" id="modal-window-login">
+      <div class="container-modal-window">
+        <h2 class="modal-title" id="modal-title">Log in to your account</h2>
+        <button class="modal-button modal-button-facebook">
+          <img src="./assets/svg/icon_facebook.svg" alt="icon_facebook">
+          <span class="modal-button-span">Sign In with Facebook</span>
+        </button>
+        <button class="modal-button modal-button-google">
+          <img src="./assets/svg/icon_google.svg" alt="icon_google">
+          <span class="modal-button-span">Sign In with Google</span>
+        </button>
+        <div class="modal-or"><span class="modal-or-span">or</span></div>
+        <form action="#" id="inputForm" class="modal-inputForm">
+          <label for="email" class="modal-inputForm-label">E-mail</label>
+          <input id="email" type="text" placeholder="" class="modal-inputForm-input">
+          <label for="password" class="modal-inputForm-label modal-inputForm-label-password">Password</label>
+          <input id="password" type="password" placeholder="" class="modal-inputForm-input">
+          <button class="modal-inputForm-button" type="submit" id="singBtn">Sign in</button>
+        </form>
+        <a href="#" class="modal-link-forgot">Forgot Your Password?</a>
+        <div class="modal-footer">
+          <span class="modal-footer-span" id="modal-footer-span">Don't have an account?</span>
+          <a href="#" class="modal-footer-link-reg" id="modal-footer-link">Register</a>
+        </div>
+      </div>
+    </div>
+    <div class="container header-container">
+        <a href="./index.html" class="header-logo-link">
+                <img src="./assets/svg/logo_travel_portal.svg" alt="logo-company" class="header-logo">
+            <span class="header-logo-text">Travel Portal</span>
+        </a>
+        <div class="body-wrapper"></div>
+        <nav class="header-nav">
+        <ul class="header-list">
+            <li class="header-list-item">
+                <a href="#preview" class="header-list-item-link">How It Works</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#steps" class="header-list-item-link">Plan Your Trip</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#destinations" class="header-list-item-link">Destinations</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#stories" class="header-list-item-link">Travel Stories</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#" class="header-list-item-link mobile-login">Account</a>
+            </li>
+            <li class="header-list-item">
+                <a href="#social" class="header-list-item-link">Social Media</a>
+            </li>
+            </ul>
+        </nav>
+        <button class="header-btn button" type="button">Login</button>
+        <button class="header-burger" type="button"></button>
+    </div>
+</header>
+<main class="main">
+  <section class="preview">
+      <div class="container preview-container">
+          <div class="preview-content">
+              <h1 class="preview-title" id="preview">Explore the beauty of the World</h1>
+              <p class="preview-p">Receive personalized recommendations for countries, hotels, activities and more
+              </p>
+              <form class="preview-form-search">
+              <input type="text" class="preview-form-search-input" placeholder="What would you like to do?" name="search" required>
+              <button class="preview-form-search-btn button" type="button">Start Planning</button>
+              </form>
+          </div>
+      </div>
+  </section>
+  <section class="steps" id="steps">
+      <div class="container steps-container">
+          <div class="steps-content">
+              <h2 class="steps-title title">3 steps to the perfect trip</h2>
+              <ul class="steps-list">
+                  <li class="steps-item">
+                      <img src="./assets/svg/icon_bicycle.svg" alt="icon_bicycle" class="steps-item-img">
+                      <p class="steps-item-p">Tell us what you want to do</p>
+                  </li>
+                  <li class="steps-item">
+                      <img src="./assets/svg/icon_calendar.svg" alt="icon_calendar" class="steps-item-img">
+                      <p class="steps-item-p">Share us preferable dates </p>
+                  </li>
+                  <li class="steps-item">
+                      <img src="./assets/svg/icon_plane.svg" alt="icon_plane" class="steps-item-img">
+                  <p class="steps-item-p">We will give you recommendations</p>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </section>
+  <section class="destinations" id="destinations">
+    <div class="container destinations-container">
+      <div class="destinations-content">
+        <h2 class="destinations-title title">popular destinations</h2>
+        <div class="destinations-slider">
+          <div class="destinations-slider-wrapper">
+            <div class="destinations-slider-item">
+              <picture>
+                <source media="(max-width: 576px)" srcset="./assets/img/mobile_spain.jpg">
+                <img src="./assets/img/spain.jpg" alt="spain"
+                  class="slider-image">
+              </picture>
+              <span class="slider-item-text">spain</span>
+            </div>
+            <div class="destinations-slider-item">
+              <picture>
+                <source media="(max-width: 576px)" srcset="./assets/img/mobile_japan.jpg">
+                <img src="./assets/img/japan.jpg" alt="japan"
+                  class="slider-image">
+              </picture>
+              <span class="slider-item-text">japan</span>
+            </div>
+            <div class="destinations-slider-item">
+              <picture>
+                <source media="(max-width: 576px)" srcset="./assets/img/mobile_usa.jpg">
+                <img src="./assets/img/usa.jpg" alt="usa" class="slider-image">
+              </picture>
+              <span class="slider-item-text">usa</span>
+            </div>
+            <div class="destinations-slider-btn-prev"></div>
+            <div class="destinations-slider-btn-next"></div>
+          </div>
+          <div class="destinations-slider-block-button">
+            <span class="destinations-slider-button"></span>
+            <span class="destinations-slider-button destinations-slider-button-active"></span>
+            <span class="destinations-slider-button"></span>
+          </div>
+        </div>
+        <button class="destinations-btn button">
+          <picture>
+            <source media="(max-width: 390px)" srcset="./assets/svg/mobile_icon_arrow.svg">
+            <img src="./assets/svg/icon_arrow.svg" alt="icon_arrow" class="btn-arrow-icon">
+          </picture>
+          <span>Find More</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="stories" id="stories">
+      <h2 class="stories-title title">travel stories</h2>
+      <div class="container stories-container">
+        <div class="stories-content">
+          <ul class="stories-list">
+            <li class="stories-list-item">
+              <picture>
+                <source media="(max-width: 768px)" srcset="./assets/img/mobile_ts_attractive_thailand.jpg">
+                <img src="./assets/img/ts_attractive_thailand.jpg" alt="thailand" class="stories-photo">
+              </picture>
+              <div class="stories-history">
+                <h3 class="stories-subtitle">10 Photos of Attractive Thailand</h3>
+                <p class="stories-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, porro quaerat. Repudiandae animi quae placeat nulla libero? Ipsam unde nulla doloribus consequuntur dolorem at sunt iusto, esse nisi, exercitationem explicabo?
+                  In ab dolore, dolores tempora iste quis asperiores, ullam dolorem delectus id rem iure? Inventore facere ab, quia laborum id perferendis magnam explicabo, omnis nihil vero unde maxime aliquam tempore.
+                  Minus, molestias iure. Asperiores repellendus perspiciatis cupiditate maxime voluptas incidunt nesciunt voluptates perferendis! Nostrum, sed dignissimos perspiciatis veritatis officia, dolor fuga voluptatum ipsam ex voluptatem quibusdam quos itaque magni dolores!
+                  Doloribus expedita adipisci molestiae atque optio laudantium consequatur recusandae rerum. Perspiciatis, vero, inventore dolore suscipit ratione dolores quasi doloremque dolorum commodi qui, officiis quia autem eum. Mollitia atque optio doloribus.
+                </p>
+                <a href="#" class="stories-read-more"><b>Read More</b></a>
+              </div>
+            </li>
+            <li class="stories-list-item">
+              <picture>
+                <source media="(max-width: 768px)" srcset="./assets/img/mobile_ts_canyonlands_national_park.jpg">
+                <img src="./assets/img/ts_canyonlands_national_park.jpg" alt="utah" class="stories-photo">
+              </picture>
+              <div class="stories-history">
+                <h3 class="stories-subtitle">Canyonlands National Park, Utah</h3>
+                <p class="stories-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, porro quaerat. Repudiandae animi quae placeat nulla libero? Ipsam unde nulla doloribus consequuntur dolorem at sunt iusto, esse nisi, exercitationem explicabo?
+                  In ab dolore, dolores tempora iste quis asperiores, ullam dolorem delectus id rem iure? Inventore facere ab, quia laborum id perferendis magnam explicabo, omnis nihil vero unde maxime aliquam tempore.
+                  Minus, molestias iure. Asperiores repellendus perspiciatis cupiditate maxime voluptas incidunt nesciunt voluptates perferendis! Nostrum, sed dignissimos perspiciatis veritatis officia, dolor fuga voluptatum ipsam ex voluptatem quibusdam quos itaque magni dolores!
+                  Doloribus expedita adipisci molestiae atque optio laudantium consequatur recusandae rerum. Perspiciatis, vero, inventore dolore suscipit ratione dolores quasi doloremque dolorum commodi qui, officiis quia autem eum. Mollitia atque optio doloribus.
+                </p>
+                <a href="#" class="stories-read-more"><b>Read More</b></a>
+              </div>
+            </li>
+            <li class="stories-list-item">
+              <picture>
+                <source media="(max-width: 768px)" srcset="./assets/img/mobile_ts_mountains.jpg">
+                <img src="./assets/img/ts_mountains.jpg" alt="mountains" class="stories-photo">
+              </picture>
+              <div class="stories-history">
+                <h3 class="stories-subtitle">I left my heart in the Mountains!</h3>
+                <p class="stories-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, porro quaerat. Repudiandae animi quae placeat nulla libero? Ipsam unde nulla doloribus consequuntur dolorem at sunt iusto, esse nisi, exercitationem explicabo?
+                  In ab dolore, dolores tempora iste quis asperiores, ullam dolorem delectus id rem iure? Inventore facere ab, quia laborum id perferendis magnam explicabo, omnis nihil vero unde maxime aliquam tempore.
+                  Minus, molestias iure. Asperiores repellendus perspiciatis cupiditate maxime voluptas incidunt nesciunt voluptates perferendis! Nostrum, sed dignissimos perspiciatis veritatis officia, dolor fuga voluptatum ipsam ex voluptatem quibusdam quos itaque magni dolores!
+                  Doloribus expedita adipisci molestiae atque optio laudantium consequatur recusandae rerum. Perspiciatis, vero, inventore dolore suscipit ratione dolores quasi doloremque dolorum commodi qui, officiis quia autem eum. Mollitia atque optio doloribus.
+                </p>
+                <a href="#" class="stories-read-more"><b>Read More</b></a>
+              </div>
+            </li>
+            <li class="stories-list-item">
+              <picture>
+                <source media="(max-width: 768px)" srcset="./assets/img/mobile_ts_longest.jpg">
+                <img src="./assets/img/ts_longest.jpg" alt="longest journey" class="stories-photo">
+              </picture>
+              <div class="stories-history">
+                <h3 class="stories-subtitle">The Longest journey in my life!</h3>
+                <p class="stories-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, porro quaerat. Repudiandae animi quae placeat nulla libero? Ipsam unde nulla doloribus consequuntur dolorem at sunt iusto, esse nisi, exercitationem explicabo?
+                  In ab dolore, dolores tempora iste quis asperiores, ullam dolorem delectus id rem iure? Inventore facere ab, quia laborum id perferendis magnam explicabo, omnis nihil vero unde maxime aliquam tempore.
+                  Minus, molestias iure. Asperiores repellendus perspiciatis cupiditate maxime voluptas incidunt nesciunt voluptates perferendis! Nostrum, sed dignissimos perspiciatis veritatis officia, dolor fuga voluptatum ipsam ex voluptatem quibusdam quos itaque magni dolores!
+                  Doloribus expedita adipisci molestiae atque optio laudantium consequatur recusandae rerum. Perspiciatis, vero, inventore dolore suscipit ratione dolores quasi doloremque dolorum commodi qui, officiis quia autem eum. Mollitia atque optio doloribus.
+                </p>
+                <a href="#" class="stories-read-more"><b>Read More</b></a>
+              </div>
+            </li>
+          </ul>
+          <button class="stories-btn button">
+            <picture>
+              <source media="(max-width: 390px)" srcset="./assets/svg/mobile_icon_arrow.svg">
+              <img src="./assets/svg/icon_arrow.svg" alt="icon_arrow" class="btn-arrow-icon">
+            </picture>
+            <span>See More</span>
+          </button>
+        </div>
+    </div>
+  </section>
+</main>
+  <footer class="footer" id="social">
+    <div class="container footer-container">
+        <div class="footer-rools">All Rights Reserved &copy; Travel Portal</div>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+              <a href="https://github.com/ViktorZarvanskyi" target="_blank">
+                  <img src="./assets/svg/icon_instagram.svg" alt="icon_instagram">
+              </a>
+          </li>
+          <li class="footer-social-item">
+              <a href="https://rs.school/js-stage0/" target="_blank">
+                  <img src="./assets/svg/icon_youtube.svg" alt="icon_youtube">
+              </a>
+          </li>
+          <li class="footer-social-item">
+              <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/travel/travel.md" target="_blank">
+                  <img src="./assets/svg/icon_twiter.svg" alt="icon_twitter">
+              </a>
+          </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./JS/script.js"></script>
+</body>
+</html>

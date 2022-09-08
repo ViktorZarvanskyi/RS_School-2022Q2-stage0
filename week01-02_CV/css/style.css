@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kdam Thmor Pro', 'Roboto', sans-serif;
+}
+
+body {
+    background: rgba(243, 235, 213, 0.676);
+}
+
+nav {
+    background: rgba(102, 213, 176, 0.795);
+    box-shadow: 0px 4px 4px rgba(4, 90, 63, 0.18);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-right: 25px;
+}
+
+.menu_item:last-child a {
+    padding-right: 0;
+}
+
+.subheader {
+    margin-top: 30px;
+}
+
+.subheader .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 10px solid rgba(102, 213, 176, 0.795);
+}
+
+.photo {
+    height: 300px;
+    width: auto;
+    border-radius: 50% 25%;
+}
+
+h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(102, 213, 176, 0.795);
+}
+
+.position_at_future {
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+main {
+    margin-top: 50px;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+section ul {
+    list-style: none;
+    line-height: 35px;
+}
+
+h2 {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.main_item a {
+    text-decoration: none;
+    color: rgba(3, 32, 32, 0.9);
+}
+
+section {
+    padding-bottom: 20px;
+    border-bottom:  2px solid rgba(102, 213, 176, 0.795);
+}
+
+section#education,
+section#languages {
+    border: none;
+}
+
+main ul img {
+    margin-right: 10px;
+    height: 20px;
+}
+
+footer {
+    background: rgba(102, 213, 176, 0.795);
+    box-shadow: 0px 4px 4px rgba(4, 90, 63, 0.18);
+    padding: 20px 10px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(3, 32, 32, 0.9);
+}
+
+footer img {
+    height: 50px;
+}
